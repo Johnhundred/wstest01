@@ -1,0 +1,36 @@
+{
+  "name": "wss_test_1",
+  "version": "1.0.0",
+  "description": "Websocket test - backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon ./index",
+    "lint": "./node_modules/eslint/bin/eslint.js /**/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ws"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "socketio": "^1.0.0"
+  }
+}

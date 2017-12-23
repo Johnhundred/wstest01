@@ -1,0 +1,17 @@
+<script src="http://localhost:3001/socket.io/socket.io.js"></script>
+<script>
+  var socket = io('http://localhost:3001');
+  socket.on('connect', function(){ console.log('You are connected.'); });
+  socket.on('list', function(data){
+    let result = '';
+    data.map((item) => {
+      let text = `${item.time}, `;
+      result += text;
+    });
+
+    document.querySelector('#test').innerHTML = result;
+  });
+  socket.on('disconnect', function(){});
+</script> 
+
+<p id="test"></p>
